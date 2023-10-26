@@ -395,10 +395,12 @@
             <input type="text" placeholder="E-mail" />
           </div>
           <div class="subscribe-style">
-            <h3>Subscribe</h3>
-            <svg>
-              <use href="./images/symbol-defs.svg#icon-icon-sendsvg"></use>
-            </svg>
+            <button class="subscribe-button-style">
+              Subscribe
+              <svg>
+                <use href="./images/symbol-defs.svg#icon-icon-sendsvg"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -452,7 +454,8 @@
           </div>
           <div class="textarea-container">
             <label for="Comments">Comments</label>
-            <textarea class="style-textarea"
+            <textarea
+              class="style-textarea"
               name="Comments"
               id=""
               cols="30"
@@ -460,10 +463,12 @@
               placeholder="Enter the text"
             ></textarea>
           </div>
-          <div class="terms-container">
+          <div class="terms-container" >
             <input type="checkbox" id="checkbox" />
-            <label for="checkbox"> I agree with the letter and accept the
-              <span>Terms and Conditions</span></label>
+            <span>
+              <p>I agree with the letter and accept the</p>
+              <a href="#">Terms and Conditions</a>
+            </span>
           </div>
           <div class="send-button-container">
             <button class="send-button">Send</button>
@@ -475,3 +480,5 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+<input type="checkbox" id="checkbox" />

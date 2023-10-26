@@ -587,6 +587,7 @@ ul {
   height: 50px;
   top: 2787px;
   left: 815px;
+  padding: 15px 15px 16px;
   border-radius: 4px;
   border: 1px solid #ffffff4d;
   background-color: #2f303a;
@@ -604,24 +605,28 @@ ul {
   align-items: center;
   gap: 25px;
   background-color: #2196f3;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+
+.subscribe-button-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
   width: 200px;
   height: 50px;
   top: 2787px;
   left: 1185px;
   border-radius: 4px;
-  margin-top: 40px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
 }
 
-.subscribe-style h3 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  color: #fff;
+.subscribe-button-style:hover {
+  box-shadow: 0px 4px 4px 0px #00000026;
+  background-color: #188ce8;
 }
 
 .subscribe-style svg {
@@ -630,6 +635,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #fff;
 }
 
 /* PORTOFOLIO */
@@ -823,7 +829,7 @@ ul {
 }
 
 .close-button-container:hover svg {
-  fill: #2196f3;
+  fill: rgba(33, 150, 243, 1);
 }
 .contact-form {
   display: flex;
@@ -869,19 +875,22 @@ ul {
   left: 576px;
   border-radius: 4px;
   outline: none;
+  padding: 12px 16px;
 }
-
-
 
 .style-textarea:focus {
   border: 1px solid rgba(33, 150, 243, 1);
-} *
-
-.terms-container {
+}
+* .terms-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 7px;
+}
+
+.terms-container svg {
+  width: 16px;
+  height: 15px;
 }
 
 .terms-container p {
@@ -894,14 +903,29 @@ ul {
 }
 
 .terms-container span {
-  color: #2196f3;
-}
-
-.send-button-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 40px;
+}
+
+.terms-container a {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #2196f3;
+}
+
+.terms-container input {
+  accent-color: #2196f3;
+}
+
+.send-button-container {
+ display: flex;
+ justify-content: center;
+ align-content: center;
 }
 
 .send-button {
@@ -910,8 +934,6 @@ ul {
   align-items: center;
   width: 200px;
   height: 50px;
-  top: 712px;
-  left: 700px;
   border-radius: 4px;
   background-color: #188ce8;
   color: #fff;
