@@ -881,7 +881,8 @@ ul {
 .style-textarea:focus {
   border: 1px solid rgba(33, 150, 243, 1);
 }
-* .terms-container {
+
+.terms-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -902,11 +903,31 @@ ul {
   text-align: left;
 }
 
-.terms-container span {
+.modal-content form label {
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
 }
+.modal-content form label svg {
+  position: absolute;
+  top: 18.5px;
+  left: 0;
+  width: 16px;
+  height: 15px;
+}
+.modal-content form label input {
+  width: 16px;
+  height: 16px;
+  accent-color: #2196f3;
+}
+.modal-content form label input:checked {
+  z-index: 2;
+}
+.modal-content form label p {
+  padding-left: 10px;
+} 
+
 
 .terms-container a {
   font-family: Roboto;
@@ -918,14 +939,10 @@ ul {
   color: #2196f3;
 }
 
-.terms-container input {
-  accent-color: #2196f3;
-}
-
 .send-button-container {
- display: flex;
- justify-content: center;
- align-content: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .send-button {
